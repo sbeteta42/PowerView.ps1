@@ -86,3 +86,17 @@ Get-ForestTrust                   - renvoie toutes les approbations de forêt po
 Get-DomainForeignUser             - énumère les utilisateurs qui font partie de groupes en dehors du domaine de l'utilisateur
 Get-DomainForeignGroupMember      - énumère les groupes avec des utilisateurs en dehors du domaine du groupe et renvoie chaque membre étranger
 Get-DomainTrustMapping            - cette fonction énumère toutes les approbations pour le domaine actuel, puis énumère toutes les approbations pour chaque domaine trouvé
+
+# Installation
+Pour installer ce module, déposez l'intégralité du dossier Recon dans l'un de vos répertoires de module. Les chemins d'accès aux modules PowerShell par défaut sont répertoriés dans la variable d'environnement $Env:PSModulePath.
+
+Le chemin d'accès par défaut au module par utilisateur est : "$Env:HomeDrive$Env:HOMEPATH\Documents\WindowsPowerShell\Modules"
+Le chemin d'accès par défaut au module au niveau de l'ordinateur est : "$Env:windir\System32\WindowsPowerShell\v1.0\Modules"
+
+Pour utiliser le module, tapez `Import-Module Recon`
+
+Pour voir les commandes importées, tapez `Get-Command -Module Recon`
+
+Pour obtenir de l'aide sur chaque commande individuelle, Get-Help est votre ami.
+
+Remarque : Les outils contenus dans ce module ont tous été conçus de manière à pouvoir être exécutés individuellement. Les inclure dans un module se prête simplement à une portabilité accrue.
