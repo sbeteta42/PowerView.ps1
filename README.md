@@ -1,2 +1,2 @@
 # PowerView.ps1
-PowerViexw est un outil PowerShell de reconnaissance Active Directory
+PowerView est un outil PowerShell de reconnaissance Active Directory
