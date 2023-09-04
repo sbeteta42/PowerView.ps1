@@ -21,7 +21,7 @@ Get-DomainSPNTicket       - demande le ticket Kerberos pour un nom principal de 
 Invoke-Kerberoast :       demande des tickets de service pour les comptes compatibles Kerberoast et renvoie les hachages de tickets extraits.
 Get-PathAcl               - récupère les ACL pour un chemin de fichier local/distant avec récursivité de groupe facultative
 
-# Fonctions de domaine/LDAP :
+### Fonctions de domaine/LDAP :
 Get-DomainDNSZone                 - énumère les zones DNS Active Directory pour un domaine donné
 Get-DomainDNSRecord               - énumère les enregistrements DNS Active Directory pour une zone donnée
 Get-Domain                        - renvoie l'objet de domaine pour le domaine actuel (ou spécifié)
@@ -33,13 +33,15 @@ Find-DomainObjectPropertyOutlier  - identifie les objets utilisateur/groupe/ordi
 Get-DomainUser                    - renvoie tous les utilisateurs ou objets utilisateur spécifiques dans AD
 New-DomainUser                    - crée un nouvel utilisateur de domaine (en supposant les autorisations appropriées) et renvoie l'objet utilisateur
 Set-DomainUserPassword            - définit le mot de passe pour une identité utilisateur donnée et renvoie l'objet utilisateur
-Get-DomainUserEvent               - énumère les événements de connexion au compte (ID 4624) et la connexion avec les événements d'informations d'identification explicites
+Get-DomainUserEvent               - énumère les événements de connexion au compte (ID 4624) et la connexion avec les 
+                                    événements d'informations d'identification explicites
 Get-DomainComputer                - renvoie tous les ordinateurs ou objets informatiques spécifiques dans AD
 Get-DomainObject                  - renvoie tous les objets de domaine (ou spécifiés) dans AD
 Set-DomainObject                  - modifie une propriété gven pour un objet Active Directory spécifié
 Get-DomainObjectAcl               - renvoie les ACL associées à un objet Active Directory spécifique
 Add-DomainObjectAcl               - ajoute une ACL pour un objet Active Directory spécifique
-Find-InterestingDomainAcl         - recherche les ACL d'objets dans le domaine actuel (ou spécifié) avec des droits de modification définis sur des objets non intégrés
+Find-InterestingDomainAcl         - recherche les ACL d'objets dans le domaine actuel (ou spécifié) avec des droits de 
+                                    modification définis sur des objets non intégrés
 Get-DomainOU                      - recherche de toutes les unités d'organisation (OU) ou d'objets d'UO spécifiques dans AD
 Get-DomainSite                    - recherche de tous les sites ou objets de site spécifiques dans AD
 Get-DomainSubnet                  - recherche tous les sous-réseaux ou objets de sous-réseaux spécifiques dans AD
@@ -52,7 +54,7 @@ Add-DomainGroupMember             - ajoute un utilisateur (ou un groupe) de doma
 Get-DomainFileServer              - renvoie une liste de serveurs fonctionnant probablement comme serveurs de fichiers
 Get-DomainDFSShare                - renvoie une liste de tous les systèmes de fichiers distribués tolérants aux pannes pour le domaine actuel (ou spécifié)
 
-# Fonctions d'énumération 
+### Fonctions d'énumération 
 Get-NetLocalGroup                 - énumère les groupes locaux sur la machine locale (ou distante)
 Get-NetLocalGroupMember           - énumère les membres d'un groupe local spécifique sur la machine locale (ou distante)
 Get-NetShare                      - renvoie les partages ouverts sur la machine locale (ou distante)
@@ -69,7 +71,7 @@ Get-WMIRegMountedDrive            - renvoie des informations sur les lecteurs mo
 Get-WMIProcess                    - renvoie une liste de processus et de leurs propriétaires sur la machine locale ou distante
 Find-InterestingFile              - recherche les fichiers sur le chemin donné qui correspondent à une série de critères spécifiés
 
-# Fonctions « méta » filetées
+### Fonctions « méta » filetées
 Find-DomainUserLocation           - recherche les machines du domaine auxquelles des utilisateurs spécifiques sont connectés
 Find-DomainProcess                - recherche les machines du domaine sur lesquelles des processus spécifiques sont actuellement en cours d'exécution
 Find-DomainUserEvent              - recherche les événements de connexion sur le domaine actuel (ou distant) pour les utilisateurs spécifiés
@@ -78,7 +80,7 @@ Find-InterestingDomainShareFile   - recherche des fichiers correspondant à des 
 Find-LocalAdminAccess             - recherche les machines sur le domaine local sur lequel l'utilisateur actuel dispose d'un accès administrateur local
 Find-DomainLocalGroupMember       - énumère les membres du groupe local spécifié sur les machines du domain
 
-# Fonctions de "Trust" domaine :
+### Fonctions de "Trust" domaine :
 Get-DomainTrust                   - renvoie toutes les approbations de domaine pour le domaine actuel ou un domaine spécifié
 Get-ForestTrust                   - renvoie toutes les approbations de forêt pour la forêt actuelle ou une forêt spécifiée
 Get-DomainForeignUser             - énumère les utilisateurs qui font partie de groupes en dehors du domaine de l'utilisateur
